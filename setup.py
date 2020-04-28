@@ -15,7 +15,6 @@ setup(
     include_package_data=True,
     install_requires=[
         'twisted',
-        'crochet',
         'ipython'
     ],
     description="An IPython extension for running twisted code",
@@ -25,7 +24,7 @@ setup(
     author_email="josh.holbrook@gmail.com",
     url="https://github.com/jfhbrook/twisted_ipython",
     keywords=[
-        "IPython", "twisted", "crochet"
+        "IPython", "twisted"
     ],
     classifiers=[
         "Programming Language :: Python",

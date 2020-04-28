@@ -1,9 +1,8 @@
-import crochet
-from twisted_ipython.magic import install_autoawait, TwistedMagics
+from twisted_ipython.magic import install_autoawait
 
 
 def load_ipython_extension(ipython):
-    crochet.setup()
+    from twisted.internet.asyncioreactor import install  # noqa: F401
+    install()
 
-    ipython.register_magics(TwistedMagics)
     install_autoawait(ipython)
